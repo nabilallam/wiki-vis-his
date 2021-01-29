@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Wiki-Vis-His",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wikipedia-trackerk@schoolit.site"
+    }
+  },
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Wikipedia Visits History",
+    "default_popup": "popup/choose_options.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/*"],
+      "js": ["wiki-vis-his.js"]
+    }
+  ],
+
+    "web_accessible_resources": [
+    "/pages/*"
+  ]
+
+}
