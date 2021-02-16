@@ -29,7 +29,8 @@ function getVisits(value) {
 
 function createLink(url) {
   let a = document.createElement('a');
-  let link = document.createTextNode(url);
+  a.setAttribute('class', 'normal_weight');
+  let link = document.createTextNode(articleTopic(url));
   a.appendChild(link);
   a.title = link;
   a.href = url;
@@ -37,8 +38,12 @@ function createLink(url) {
   return a;
 }
 
+function articleLanguage(url) {
+  return url.split('.').shift().substr(-2,2);
+}
+
 function articleTopic(url) {
-  url.split('/').pop();
+  return url.split('/').pop();
 }
 
 function isWikipediaUrl(url) {

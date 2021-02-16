@@ -6,10 +6,9 @@ function showVisitedPages() {
 }
 
 function resetVisitedPages() {
-  console.log("by world");
   if(confirm("Are you sure?")) {
     browser.storage.local.clear();
-    browser.storage.local.set({startet_at: new Date(), visits: {}});
+    browser.storage.local.set({startet_at: new Date()});
   }
 }
 

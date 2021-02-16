@@ -463,3 +463,7 @@ blockquote footer {
 .right {
   text-align: right;
 }
+
+.normal_weight {
+  font-weight: normal;
+}
