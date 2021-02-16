@@ -7,13 +7,13 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "wikipedia-trackerk@schoolit.site"
+      "id": "wikipedia-tracker@schoolit.site"
     }
   },
 
   "icons": {
-     "48": "icons/lightbulb.svg",
-     "96": "icons/lightbulb.svg"
+     "48": "icons/wikistat.svg",
+     "96": "icons/wikistat.svg"
   },
 
   "permissions": [
