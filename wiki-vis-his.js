@@ -1,7 +1,7 @@
 incrementVisists(window.location.href);
 initializeDate();
 
-browser.storage.local.get(null).then((item) => console.log(item));
+//browser.storage.local.get(null).then((item) => console.log(item));
 async function incrementVisists(url) {
   let storage_value = browser.storage.local.get(url);
 

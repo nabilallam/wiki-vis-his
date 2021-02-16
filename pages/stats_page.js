@@ -6,19 +6,36 @@ async function generateTable() {
   let totalVisits = 0;
 
   for (let url in data) {
-    let value = data[url];
-    totalVisits += getVisits(value);
-    console.log(totalVisits);
-    let row = tbody.insertRow();
-    let cell1 = row.insertCell();
-    //let text1 = document.createTextNode(`${key}`);
-    cell1.appendChild(createLink(url));
+    if(isWikipediaUrl(url)) {
+      let value = data[url];
+      totalVisits += getVisits(value);
 
-    let cell2 = row.insertCell();
-    let text2 = document.createTextNode(value);
-    cell2.setAttribute('class', 'right');
-    cell2.appendChild(text2);
+      let row = tbody.insertRow();
+      let cell1 = row.insertCell();
+      cell1.appendChild(createLink(url));
+
+      let cell2 = row.insertCell();
+      let text2 = document.createTextNode(articleLanguage(url));
+      cell2.appendChild(text2);
+
+      let cell3 = row.insertCell();
+      let text3 = document.createTextNode(value);
+      cell3.setAttribute('class', 'right');
+      cell3.appendChild(text3);
+    }
   }
+
+  let row = tbody.insertRow();
+  let totalTextCell = row.insertCell();
+  let totalText = document.createTextNode('Total');
+  totalTextCell.appendChild(totalText);
+
+  let empyCell = row.insertCell();
+
+  let totalNumber = row.insertCell();
+  let textNode = document.createTextNode(totalVisits);
+  totalNumber.setAttribute('class', 'right');
+  totalNumber.appendChild(textNode);
 }
 
 function getVisits(value) {
