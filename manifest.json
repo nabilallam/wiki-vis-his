@@ -12,7 +12,8 @@
   },
 
   "icons": {
-    "48": "icons/border-48.png"
+     "48": "icons/lightbulb.svg",
+     "96": "icons/lightbulb.svg"
   },
 
   "permissions": [

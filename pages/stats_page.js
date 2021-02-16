@@ -1,9 +1,14 @@
 generateTable();
 
 async function generateTable() {
-  let tbody = document.getElementById("data-table-body");
+  let date = document.getElementById('start-date');
+  let tbody = document.getElementById('data-table-body');
   let data = await browser.storage.local.get(null);
   let totalVisits = 0;
+
+  d = new Date(Date.parse(data['started_at'])).toDateString();
+  let dateText = document.createTextNode(`Start Date: ${d}`);
+  date.appendChild(dateText);
 
   for (let url in data) {
     if(isWikipediaUrl(url)) {
