@@ -15,4 +15,4 @@ This is my first JS/Browser Extension project. Don't hesitate to show me, if I c
 
 Pull/Merge Request are also welcome. Please take a look into issues.
 
-Thanks to https://github.com/tlemens. He gave me a lot of help to make it possible.
+Thanks to https://github.com/tlemens. He helped me alot to make it possible.
