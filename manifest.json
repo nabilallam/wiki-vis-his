@@ -29,7 +29,9 @@
   "content_scripts": [
     {
       "matches": ["*://*.wikipedia.org/*"],
-      "js": ["wiki-vis-his.js"]
+      "js": [
+        "./dist/content.js"
+      ]
     }
   ],
 
