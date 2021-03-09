@@ -28,3 +28,5 @@ This is my first JS/Browser Extension project. Don't hesitate to show me, if I c
 Pull/Merge Request are also welcome. Please take a look into issues.
 
 Thanks to https://github.com/tlemens. He helped me alot to make it possible.
+
+Licence: GPL 3.0 http://www.gnu.org/licenses/gpl-3.0.html

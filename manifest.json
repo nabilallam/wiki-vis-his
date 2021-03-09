@@ -3,7 +3,7 @@
   "name": "Wiki-Vis-His",
   "version": "1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "",
 
   "browser_specific_settings": {
     "gecko": {
