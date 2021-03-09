@@ -9,7 +9,7 @@ my learning process where I see which Wikipedia articles I'm reading regulary. I
 know about its Wikipedia visits :)
 Additionally you can see when you are looking to donate for Wikipedia, how often did you opened a Wikipedia page.
 
-It is started as an Mozilla Firefox Addon but and will also available as a Chrome extension.
+It is started as an Mozilla Firefox Addon but and will be also available as a Chrome extension, hopefully soon.
 
 This is my first JS/Browser Extension project. Don't hesitate to show me, if I can improve something.
 
