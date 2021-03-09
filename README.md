@@ -4,6 +4,18 @@ stands for wikipedia.org visits history
 
 A browser extension/addon which tracks your wikipedia.org article visits
 
+### Version 1.0
+
+**for development:**
+
+* npm 7 or 6 is needed
+* webpack
+
+**run it locally**
+
+1. `npx webpack`
+2. load the Addon in your Firefox
+
 I started this extension for myself as a way to see which Wikipedia article I'm visiting. This should help me to improve
 my learning process where I see which Wikipedia articles I'm reading regulary. I think it is helpfull for everybody to
 know about its Wikipedia visits :)
